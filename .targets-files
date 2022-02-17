@@ -1,0 +1,11 @@
+.targets-files
+_targets/meta/meta
+_targets/meta/process
+_targets/meta/progress
+_targets/objects/country
+_targets/objects/domain
+_targets/objects/template
+_targets/objects/vegmap
+data/domain.gpkg
+data/processed_data/remnant_distance/remnant_distance.tif
+data/processed_data/remnants/remnants.tif

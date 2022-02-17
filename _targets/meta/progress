@@ -1,0 +1,17 @@
+name|type|parent|branches|progress
+vegmap_shp|stem|vegmap_shp|0|started
+vegmap_shp|stem|vegmap_shp|0|built
+remnants_shp|stem|remnants_shp|0|started
+remnants_shp|stem|remnants_shp|0|built
+template|stem|template|0|started
+template|stem|template|0|built
+country|stem|country|0|started
+country|stem|country|0|built
+vegmap|stem|vegmap|0|started
+vegmap|stem|vegmap|0|built
+domain|stem|domain|0|started
+domain|stem|domain|0|built
+remnants|stem|remnants|0|started
+remnants|stem|remnants|0|built
+remnant_distance|stem|remnant_distance|0|started
+remnant_distance|stem|remnant_distance|0|built
