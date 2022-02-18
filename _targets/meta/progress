@@ -6,11 +6,12 @@ country|stem|country|0|skipped
 vegmap|stem|vegmap|0|skipped
 domain|stem|domain|0|skipped
 alos|stem|alos|0|skipped
-fire_modis|stem|fire_modis|0|started
-fire_modis|stem|fire_modis|0|built
+fire_modis|stem|fire_modis|0|skipped
 remnants|stem|remnants|0|skipped
 elevation_nasadem|stem|elevation_nasadem|0|skipped
 climate_chelsa|stem|climate_chelsa|0|skipped
 precipitation_chelsa|stem|precipitation_chelsa|0|skipped
 clouds_wilson|stem|clouds_wilson|0|skipped
+correct_fire_proj|stem|correct_fire_proj|0|started
+correct_fire_proj|stem|correct_fire_proj|0|built
 remnant_distance|stem|remnant_distance|0|skipped

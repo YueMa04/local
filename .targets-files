@@ -6,6 +6,7 @@ _targets/meta/progress
 _targets/objects/alos
 _targets/objects/climate_chelsa
 _targets/objects/clouds_wilson
+_targets/objects/correct_fire_proj
 _targets/objects/country
 _targets/objects/domain
 _targets/objects/elevation_nasadem
@@ -111,6 +112,7 @@ data/raw_data/fire_modis/2004_09_01.tif
 data/raw_data/fire_modis/2004_10_01.tif
 data/raw_data/fire_modis/2004_11_01.tif
 data/raw_data/fire_modis/2004_12_01.tif
+data/raw_data/fire_modis/log.csv
 data/raw_data/precipitation_chelsa/chelsa_citation.bib
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_01_V1.2_land_clipped.grd
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_01_V1.2_land_clipped.gri
