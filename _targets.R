@@ -73,11 +73,11 @@ tar_target(
   #   get_landcover_za(domain = domain),
   #   age = as.difftime(26, units = "weeks")
   # ),
-  # tar_age(
-  #   precipitation_chelsa,
-  #   get_precipitation_chelsa(domain = domain),
-  #   age = as.difftime(26, units = "weeks")
-  # ),
+  tar_age(
+    precipitation_chelsa,
+    get_precipitation_chelsa(domain = domain),
+    age = as.difftime(26, units = "weeks")
+  ),
 
 # # Frequent updates
 #
