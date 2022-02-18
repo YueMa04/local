@@ -7,7 +7,8 @@ vegmap|stem|vegmap|0|skipped
 domain|stem|domain|0|skipped
 alos|stem|alos|0|skipped
 remnants|stem|remnants|0|skipped
+elevation_nasadem|stem|elevation_nasadem|0|started
+elevation_nasadem|stem|elevation_nasadem|0|built
 climate_chelsa|stem|climate_chelsa|0|skipped
-precipitation_chelsa|stem|precipitation_chelsa|0|skipped
 clouds_wilson|stem|clouds_wilson|0|skipped
 remnant_distance|stem|remnant_distance|0|skipped

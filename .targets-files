@@ -8,6 +8,7 @@ _targets/objects/climate_chelsa
 _targets/objects/clouds_wilson
 _targets/objects/country
 _targets/objects/domain
+_targets/objects/elevation_nasadem
 _targets/objects/precipitation_chelsa
 _targets/objects/template
 _targets/objects/vegmap
@@ -58,6 +59,7 @@ data/raw_data/clouds_wilson/MODCF_seasonality_rgb.tif
 data/raw_data/clouds_wilson/MODCF_seasonality_theta.tif
 data/raw_data/clouds_wilson/MODCF_seasonality_visct.tif
 data/raw_data/clouds_wilson/MODCF_spatialSD_1deg.tif
+data/raw_data/elevation_nasadem/nasadem.tif
 data/raw_data/precipitation_chelsa/chelsa_citation.bib
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_01_V1.2_land_clipped.grd
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_01_V1.2_land_clipped.gri
