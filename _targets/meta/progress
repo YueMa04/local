@@ -8,8 +8,7 @@ domain|stem|domain|0|skipped
 alos|stem|alos|0|skipped
 ndvi_modis|stem|ndvi_modis|0|started
 ndvi_modis|stem|ndvi_modis|0|built
-fire_modis|stem|fire_modis|0|started
-fire_modis|stem|fire_modis|0|built
+fire_modis|stem|fire_modis|0|skipped
 remnants|stem|remnants|0|skipped
 elevation_nasadem|stem|elevation_nasadem|0|skipped
 climate_chelsa|stem|climate_chelsa|0|skipped
