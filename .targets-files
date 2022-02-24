@@ -11,6 +11,7 @@ _targets/objects/country
 _targets/objects/domain
 _targets/objects/elevation_nasadem
 _targets/objects/fire_modis
+_targets/objects/ndvi_dates_modis
 _targets/objects/ndvi_modis
 _targets/objects/precipitation_chelsa
 _targets/objects/template
@@ -818,6 +819,11 @@ data/raw_data/ndvi_modis/2021_09_14.tif
 data/raw_data/ndvi_modis/2021_09_30.tif
 data/raw_data/ndvi_modis/2021_10_16.tif
 data/raw_data/ndvi_modis/2021_11_01.tif
+data/raw_data/ndvi_modis/2021_11_17.tif
+data/raw_data/ndvi_modis/2021_12_03.tif
+data/raw_data/ndvi_modis/2021_12_19.tif
+data/raw_data/ndvi_modis/2022_01_01.tif
+data/raw_data/ndvi_modis/2022_01_17.tif
 data/raw_data/precipitation_chelsa/chelsa_citation.bib
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_01_V1.2_land_clipped.grd
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_01_V1.2_land_clipped.gri
