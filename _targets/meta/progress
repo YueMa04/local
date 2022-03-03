@@ -6,8 +6,7 @@ vegmap|stem|vegmap|0|skipped
 domain|stem|domain|0|skipped
 alos|stem|alos|0|skipped
 ndvi_modis|stem|ndvi_modis|0|skipped
-kndvi_modis|stem|kndvi_modis|0|started
-kndvi_modis|stem|kndvi_modis|0|built
+kndvi_modis|stem|kndvi_modis|0|skipped
 fire_modis|stem|fire_modis|0|skipped
 ndvi_dates_modis|stem|ndvi_dates_modis|0|skipped
 elevation_nasadem|stem|elevation_nasadem|0|skipped
