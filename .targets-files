@@ -7,6 +7,7 @@ _targets/objects/alos
 _targets/objects/climate_chelsa
 _targets/objects/clouds_wilson
 _targets/objects/correct_fire_proj
+_targets/objects/correct_kndvi_proj
 _targets/objects/correct_ndvi_date_proj
 _targets/objects/correct_ndvi_proj
 _targets/objects/country
@@ -15,6 +16,7 @@ _targets/objects/elevation_nasadem
 _targets/objects/fire_modis
 _targets/objects/fire_modis_release
 _targets/objects/kndvi_modis
+_targets/objects/kndvi_modis_release
 _targets/objects/ndvi_dates_modis
 _targets/objects/ndvi_modis
 _targets/objects/precipitation_chelsa
@@ -828,6 +830,7 @@ data/raw_data/kndvi_modis/2021_12_03.tif
 data/raw_data/kndvi_modis/2021_12_19.tif
 data/raw_data/kndvi_modis/2022_01_01.tif
 data/raw_data/kndvi_modis/2022_01_17.tif
+data/raw_data/kndvi_modis/log.csv
 data/raw_data/ndvi_dates_modis/2000_02_18.tif
 data/raw_data/ndvi_dates_modis/2000_03_05.tif
 data/raw_data/ndvi_dates_modis/2000_03_21.tif

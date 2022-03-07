@@ -8,6 +8,8 @@ alos|stem|alos|0|skipped
 ndvi_modis|stem|ndvi_modis|0|skipped
 kndvi_modis|stem|kndvi_modis|0|skipped
 fire_modis|stem|fire_modis|0|skipped
+kndvi_modis_release|stem|kndvi_modis_release|0|started
+kndvi_modis_release|stem|kndvi_modis_release|0|built
 ndvi_dates_modis|stem|ndvi_dates_modis|0|skipped
 elevation_nasadem|stem|elevation_nasadem|0|skipped
 climate_chelsa|stem|climate_chelsa|0|skipped
@@ -16,6 +18,8 @@ fire_modis_release|stem|fire_modis_release|0|started
 fire_modis_release|stem|fire_modis_release|0|built
 clouds_wilson|stem|clouds_wilson|0|skipped
 correct_ndvi_proj|stem|correct_ndvi_proj|0|skipped
+correct_kndvi_proj|stem|correct_kndvi_proj|0|started
+correct_kndvi_proj|stem|correct_kndvi_proj|0|built
 correct_fire_proj|stem|correct_fire_proj|0|skipped
 correct_ndvi_date_proj|stem|correct_ndvi_date_proj|0|skipped
 template|stem|template|0|skipped
