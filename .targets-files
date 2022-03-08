@@ -19,6 +19,7 @@ _targets/objects/kndvi_modis
 _targets/objects/kndvi_modis_release
 _targets/objects/ndvi_dates_modis
 _targets/objects/ndvi_modis
+_targets/objects/ndvi_modis_release
 _targets/objects/precipitation_chelsa
 _targets/objects/template
 _targets/objects/vegmap

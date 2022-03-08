@@ -17,9 +17,10 @@ precipitation_chelsa|stem|precipitation_chelsa|0|skipped
 fire_modis_release|stem|fire_modis_release|0|started
 fire_modis_release|stem|fire_modis_release|0|built
 clouds_wilson|stem|clouds_wilson|0|skipped
+ndvi_modis_release|stem|ndvi_modis_release|0|started
+ndvi_modis_release|stem|ndvi_modis_release|0|built
 correct_ndvi_proj|stem|correct_ndvi_proj|0|skipped
-correct_kndvi_proj|stem|correct_kndvi_proj|0|started
-correct_kndvi_proj|stem|correct_kndvi_proj|0|built
+correct_kndvi_proj|stem|correct_kndvi_proj|0|skipped
 correct_fire_proj|stem|correct_fire_proj|0|skipped
 correct_ndvi_date_proj|stem|correct_ndvi_date_proj|0|skipped
 template|stem|template|0|skipped

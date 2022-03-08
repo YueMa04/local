@@ -4,7 +4,7 @@ library(tidyverse)
 
 #' @description This function will download kndvi layers (derived from MODIS 16 day products), skipping any that have been downloaded already.
 #' @author Brian Maitner, but built from code by Qinwen, Adam, and the KNDVI ms authors
-#' @param temp_directory The directory the fire layers should be saved to prior to releasing, defaults to "data/raw_data/fire_modis/"
+#' @param temp_directory The directory the fire layers should be saved to prior to releasing, defaults to "data/raw_data/kndvi_modis/"
 #' @param tag tag to be used for the Github release
 #' @param domain domain (sf polygon) used for masking
 #' @param max_layers the maximum number of layers to download at once.  Set to NULL to ignore.  Default is 50
@@ -215,6 +215,13 @@ get_release_kndvi_modis <- function(temp_directory = "data/temp/raw_data/kndvi_m
     local_files <- data.frame(local_filename = list.files(path = temp_directory,
                                                           recursive = TRUE,
                                                           full.names = TRUE))
+
+    # end things if nothing was downloaded
+
+      if(nrow(local_files) == 0){
+        message("Nothing downloaded")
+        return(invisible(NULL))
+      }
 
     # Convert local filenames to be releases compatible
 
