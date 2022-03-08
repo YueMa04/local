@@ -14,8 +14,7 @@ ndvi_dates_modis|stem|ndvi_dates_modis|0|skipped
 elevation_nasadem|stem|elevation_nasadem|0|skipped
 climate_chelsa|stem|climate_chelsa|0|skipped
 precipitation_chelsa|stem|precipitation_chelsa|0|skipped
-fire_modis_release|stem|fire_modis_release|0|started
-fire_modis_release|stem|fire_modis_release|0|built
+fire_modis_release|stem|fire_modis_release|0|skipped
 clouds_wilson|stem|clouds_wilson|0|skipped
 ndvi_modis_release|stem|ndvi_modis_release|0|started
 ndvi_modis_release|stem|ndvi_modis_release|0|built
