@@ -7,6 +7,7 @@ _targets/objects/alos
 _targets/objects/climate_chelsa
 _targets/objects/clouds_wilson
 _targets/objects/correct_fire_proj
+_targets/objects/correct_fire_release_proj
 _targets/objects/correct_kndvi_proj
 _targets/objects/correct_ndvi_date_proj
 _targets/objects/correct_ndvi_proj
@@ -1851,3 +1852,4 @@ data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_01_V1.2_la
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_land_clipped.grd
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_land_clipped.gri
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_land_clipped.tif
+data/temp/raw_data/fire_modis/log.csv
