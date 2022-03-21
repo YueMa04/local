@@ -24,6 +24,7 @@ _targets/objects/kndvi_modis
 _targets/objects/kndvi_modis_release
 _targets/objects/landcover_za_release
 _targets/objects/ndvi_dates_modis
+_targets/objects/ndvi_dates_modis_release
 _targets/objects/ndvi_modis
 _targets/objects/ndvi_modis_release
 _targets/objects/precipitation_chelsa
@@ -85,4 +86,3 @@ data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_01_V1.2_la
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_land_clipped.grd
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_land_clipped.gri
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_land_clipped.tif
-data/temp/raw_data/fire_modis/log.csv
