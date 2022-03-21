@@ -17,6 +17,7 @@ _targets/objects/correct_ndvi_proj
 _targets/objects/country
 _targets/objects/domain
 _targets/objects/elevation_nasadem
+_targets/objects/elevation_nasadem_release
 _targets/objects/fire_modis
 _targets/objects/fire_modis_release
 _targets/objects/kndvi_modis
