@@ -1,4 +1,5 @@
 library(rgee)
+library(piggyback)
 
 #' @description This function will download ndvi layers (derived from MODIS 16 day products), skipping any that have been downloaded already.
 #' @author Brian Maitner, but built from code by Qinwen, Adam, and the KNDVI ms authors
@@ -6,11 +7,13 @@ library(rgee)
 #' @param tag tag to be used for the Github release
 #' @param domain domain (sf polygon) used for masking
 #' @param max_layers the maximum number of layers to download at once.  Set to NULL to ignore.  Default is 50
+#' @param sleep_time Amount of time to wait between attempts.  Needed to keep github happy
 #' @import rgee
 get_release_ndvi_modis <- function(temp_directory = "data/temp/raw_data/ndvi_modis/",
                                    tag = "raw_ndvi_modis",
                                    domain,
-                                   max_layers = 50) {
+                                   max_layers = 50,
+                                   sleep_time = 1) {
 
   # make a directory if one doesn't exist yet
 
@@ -79,7 +82,8 @@ get_release_ndvi_modis <- function(temp_directory = "data/temp/raw_data/ndvi_mod
 
     released_files <-
       released_files %>%
-      filter(file_name != "")
+      filter(file_name != "") %>%
+      filter(file_name != "log.csv")
 
 
   #check to see if any images have been downloaded already
@@ -141,105 +145,109 @@ get_release_ndvi_modis <- function(temp_directory = "data/temp/raw_data/ndvi_mod
     }
 
 
-  #Download
+  #Download layers
 
-  tryCatch(expr =
-             ee_imagecollection_to_local(ic = ndvi_clean_and_new,
-                                         region = domain,
-                                         dsn = temp_directory,
-                                         formatOptions = c(cloudOptimized = true)),
-           error = function(e){
+    tryCatch(expr =
+               ee_imagecollection_to_local(ic = ndvi_clean_and_new,
+                                           region = domain,
+                                           dsn = temp_directory,
+                                           formatOptions = c(cloudOptimized = true)),
+             error = function(e){message("Captured an error in rgee/earth engine processing of NDVI.")}
+    )
 
-             message("\ Captured an error in rgee/earth engine processing of NDVI.")
-             message(e)
-
-             }
-  )
+    #message("Done downloading NDVI layers for release")
 
   #Push files to release
 
-  # Get a lost of the local files
+    # Get a list of the local files
 
-  local_files <- data.frame(local_filename = list.files(path = temp_directory,
-                                                        recursive = TRUE,
-                                                        full.names = TRUE))
+      local_files <- data.frame(local_filename = list.files(path = temp_directory,
+                                                            recursive = TRUE,
+                                                            full.names = TRUE))
 
-  # Convert local filenames to be releases compatible
+    # Convert local filenames to be releases compatible
 
-  local_files$file_name <-
-    sapply(X = local_files$local_filename,
-           FUN = function(x){
+      local_files$file_name <-
+        sapply(X = local_files$local_filename,
+               FUN = function(x){
 
-             name_i <- gsub(pattern = temp_directory,
-                            replacement = "",
-                            x = x)
+                 name_i <- gsub(pattern = temp_directory,
+                                replacement = "",
+                                x = x)
 
-             name_i <- gsub(pattern = "/",
-                            replacement = "",
-                            x = name_i)
-             return(name_i)
+                 name_i <- gsub(pattern = "/",
+                                replacement = "",
+                                x = name_i)
+                 return(name_i)
 
-           })
+               })
 
   # Release local files
 
   # Get timestamps on local files
 
-  local_files$last_modified <-
-    Reduce(c, lapply(X = local_files$local_filename,
-                     FUN =  function(x) {
-                       file.info(x)$mtime})
-    )
+    local_files$last_modified <-
+      Reduce(c, lapply(X = local_files$local_filename,
+                       FUN =  function(x) {
+                         file.info(x)$mtime})
+      )
+
+  # end things if nothing was downloaded
+
+    if(nrow(local_files) == 0){
+      message("Nothing downloaded")
+      return(invisible(NULL))
+    }
 
   # Figure out which files DON'T need to be released
 
-  merged_info <- merge(x = released_files,
-                       y = local_files,
-                       all = TRUE)
+    merged_info <- merge(x = released_files,
+                         y = local_files,
+                         all = TRUE)
 
-  merged_info$diff_hrs <- difftime(time2 = merged_info$timestamp,
-                                   time1 = merged_info$last_modified,
-                                   units = "hours")
+    merged_info$diff_hrs <- difftime(time2 = merged_info$timestamp,
+                                     time1 = merged_info$last_modified,
+                                     units = "hours")
 
-  merged_info <- merged_info[merged_info$file_name != "",]
+    merged_info <- merged_info[merged_info$file_name != "",]
 
 
   # We only want time differences of greater than zero (meaning that the local file is more recent) or NA
 
-  merged_info <- merged_info[which(!merged_info$diff_hrs < 0 | is.na(merged_info$diff_hrs)),]
+    merged_info <- merged_info[which(!merged_info$diff_hrs < 0 | is.na(merged_info$diff_hrs)),]
 
   # Also toss anything that doesn't need to be uploaded (because doesn't exist locally)
 
-  merged_info <- merged_info[which(!is.na(merged_info$local_filename)),]
+    merged_info <- merged_info[which(!is.na(merged_info$local_filename)),]
 
 
   # End if there are no new/updated files to release
 
-  if(nrow(merged_info) == 0){
+    if(nrow(merged_info) == 0){
 
-    message("Releases are already up to date.")
-    return(invisible(NULL))
+      message("Releases are already up to date.")
+      return(invisible(NULL))
 
 
-  }
+    }
 
   # loop through and release everything
 
-  for( i in 1:nrow(merged_info)){
+    for( i in 1:nrow(merged_info)){
 
-    Sys.sleep(0.1) #We need to limit our rate in order to keep Github happy
+      Sys.sleep(sleep_time) #We need to limit our rate in order to keep Github happy
 
-    pb_upload(file = merged_info$local_filename[i],
-              repo = "AdamWilsonLab/emma_envdata",
-              tag = tag,
-              name = merged_info$file_name[i])
+      pb_upload(file = merged_info$local_filename[i],
+                repo = "AdamWilsonLab/emma_envdata",
+                tag = tag,
+                name = merged_info$file_name[i])
 
-  } # end i loop
+    } # end i loop
 
 
   # Delete temp files
-  unlink(x = gsub(pattern = "/$", replacement = "", x = temp_directory), #sub used to delete any trailing slashes, which interfere with unlink
-         recursive = TRUE)
+    unlink(x = gsub(pattern = "/$", replacement = "", x = temp_directory), #sub used to delete any trailing slashes, which interfere with unlink
+           recursive = TRUE)
 
 
   message("Finished Downloading NDVI layers")

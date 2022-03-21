@@ -9,7 +9,7 @@ library(rdryad)
 #' @author Brian Maitner
 #' @param directory The directory the soil layers should be saved to, defaults to "data/raw_data/soil_gcfr/"
 #' @import rgee
-get_soil_gcfr <- function(directory = "data/raw_data/soil_gcfr/") {
+get_soil_gcfr <- function(directory = "data/raw_data/soil_gcfr/", domain) {
 
   # Set up directories if need be
 
@@ -44,7 +44,7 @@ get_soil_gcfr <- function(directory = "data/raw_data/soil_gcfr/") {
 
   # Delete the old copies from the temporary location
 
-    file.remove(locations[[1]])
+    unlink(dirname(dirname(locations[[1]])),recursive = TRUE,force = TRUE)
 
   # Clean up
 
@@ -59,21 +59,6 @@ get_soil_gcfr <- function(directory = "data/raw_data/soil_gcfr/") {
                           full.names = T)
 
 
-    # Load in domain
-
-      if(file.exists("data/other_data/domain.shp")) {
-
-        domain <- sf::read_sf("data/other_data/domain.shp")
-
-        #Buffer the domain to get the object size down
-        domain_buffered <- sf::st_buffer(x = domain,
-                                         dist = 5000)
-
-      }else{
-
-        ext <- readRDS(file = "data/other_data/domain_extent.RDS")
-
-      }#end else
 
     # Iteratively crop and mask
 
@@ -85,11 +70,11 @@ get_soil_gcfr <- function(directory = "data/raw_data/soil_gcfr/") {
           if(i == 1){
 
             #Reproject domain to match raster
-            domain_buffered <- sf::st_transform(x = domain_buffered,
-                                                crs = crs(raster_i))
+            domain <- sf::st_transform(x = domain,
+                                       crs = raster::crs(raster_i))
 
 
-            ext <- extent(domain_buffered)
+            ext <- raster::extent(domain)
 
           }
 
@@ -97,16 +82,13 @@ get_soil_gcfr <- function(directory = "data/raw_data/soil_gcfr/") {
           raster_i <- raster::crop(x = raster_i,
                                    y = ext)
 
-        #If theres a domain object, do a mask
-          if(exists(x = "domain_buffered")){
+        # do a mask
 
             raster_i <- terra::mask(x = raster_i,
-                                    mask = domain_buffered)
-
-          }
+                                    mask = domain)
 
         # Save the cropped/masked raster
-          writeRaster(x = raster_i,
+          raster::writeRaster(x = raster_i,
                       filename = files[i],
                       overwrite = TRUE)
 
