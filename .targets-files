@@ -8,6 +8,7 @@ _targets/objects/alos_release
 _targets/objects/climate_chelsa
 _targets/objects/climate_chelsa_release
 _targets/objects/clouds_wilson
+_targets/objects/clouds_wilson_release
 _targets/objects/correct_fire_proj
 _targets/objects/correct_fire_release_proj
 _targets/objects/correct_kndvi_proj
