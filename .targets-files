@@ -12,12 +12,16 @@ _targets/objects/clouds_wilson_release
 _targets/objects/correct_fire_proj
 _targets/objects/correct_fire_release_proj
 _targets/objects/correct_kndvi_proj
+_targets/objects/correct_kndvi_release_proj
 _targets/objects/correct_ndvi_date_proj
+_targets/objects/correct_ndvi_dates_release_proj
 _targets/objects/correct_ndvi_proj
+_targets/objects/correct_ndvi_release_proj
 _targets/objects/country
 _targets/objects/domain
 _targets/objects/elevation_nasadem
 _targets/objects/elevation_nasadem_release
+_targets/objects/fire_doy_to_unix_date_release
 _targets/objects/fire_modis
 _targets/objects/fire_modis_release
 _targets/objects/kndvi_modis
@@ -86,3 +90,7 @@ data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_01_V1.2_la
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_land_clipped.grd
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_land_clipped.gri
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_land_clipped.tif
+data/temp/raw_data/fire_modis/log.csv
+data/temp/raw_data/kndvi_modis/log.csv
+data/temp/raw_data/ndvi_dates_modis/log.csv
+data/temp/raw_data/ndvi_modis/log.csv
