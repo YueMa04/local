@@ -5,6 +5,7 @@ _targets/meta/process
 _targets/meta/progress
 _targets/objects/alos
 _targets/objects/alos_release
+_targets/objects/burn_date_to_last_burned_date_release
 _targets/objects/climate_chelsa
 _targets/objects/climate_chelsa_release
 _targets/objects/clouds_wilson
@@ -92,5 +93,4 @@ data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_la
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_land_clipped.tif
 data/temp/raw_data/fire_modis/log.csv
 data/temp/raw_data/kndvi_modis/log.csv
-data/temp/raw_data/ndvi_dates_modis/log.csv
 data/temp/raw_data/ndvi_modis/log.csv
