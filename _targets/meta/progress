@@ -7,8 +7,7 @@ domain|stem|domain|0|skipped
 climate_chelsa_release|stem|climate_chelsa_release|0|skipped
 kndvi_modis_release|stem|kndvi_modis_release|0|skipped
 alos_release|stem|alos_release|0|skipped
-ndvi_dates_modis_release|stem|ndvi_dates_modis_release|0|started
-ndvi_dates_modis_release|stem|ndvi_dates_modis_release|0|built
+ndvi_dates_modis_release|stem|ndvi_dates_modis_release|0|skipped
 elevation_nasadem_release|stem|elevation_nasadem_release|0|skipped
 fire_modis_release|stem|fire_modis_release|0|skipped
 clouds_wilson_release|stem|clouds_wilson_release|0|skipped
@@ -22,7 +21,5 @@ correct_ndvi_release_proj|stem|correct_ndvi_release_proj|0|skipped
 template_release|stem|template_release|0|started
 template_release|stem|template_release|0|built
 fire_doy_to_unix_date_release|stem|fire_doy_to_unix_date_release|0|skipped
-remnants_release|stem|remnants_release|0|started
-remnants_release|stem|remnants_release|0|built
-burn_date_to_last_burned_date_release|stem|burn_date_to_last_burned_date_release|0|started
-burn_date_to_last_burned_date_release|stem|burn_date_to_last_burned_date_release|0|built
+remnants_release|stem|remnants_release|0|skipped
+burn_date_to_last_burned_date_release|stem|burn_date_to_last_burned_date_release|0|skipped
