@@ -34,6 +34,7 @@ _targets/objects/ndvi_modis
 _targets/objects/ndvi_modis_release
 _targets/objects/precipitation_chelsa
 _targets/objects/precipitation_chelsa_release
+_targets/objects/remnant_distance_release
 _targets/objects/remnants_release
 _targets/objects/template
 _targets/objects/template_release

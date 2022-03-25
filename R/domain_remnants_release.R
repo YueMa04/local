@@ -121,7 +121,7 @@ domain_distance_release <- function(remnants_release,
                        max_attempts = 10,
                        sleep_time = 10)
 
-
+  # errors thrown in this chunk when running on github, but don't seem to break anything, so...meh.
   distance_raster <-
     rast(file.path(temp_directory,remnants_release$file)) %>%
     terra::app(fun=function(x) ifelse(is.na(x),1,NA)) %>%
@@ -134,11 +134,11 @@ domain_distance_release <- function(remnants_release,
 
   #release
     pb_upload(file = file.path(temp_directory,out_file),
-              repo = template_release$repo,
+              repo = remnants_release$repo,
               tag = out_tag)
 
   #get md
-    file_md <- list(repo = template_release$repo,
+    file_md <- list(repo = remnants_release$repo,
                     tag = out_tag,
                     file = out_file)
 
