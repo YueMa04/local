@@ -18,7 +18,8 @@ correct_kndvi_release_proj|stem|correct_kndvi_release_proj|0|skipped
 correct_ndvi_dates_release_proj|stem|correct_ndvi_dates_release_proj|0|skipped
 correct_fire_release_proj|stem|correct_fire_release_proj|0|skipped
 correct_ndvi_release_proj|stem|correct_ndvi_release_proj|0|skipped
-template_release|stem|template_release|0|skipped
+template_release|stem|template_release|0|started
+template_release|stem|template_release|0|built
 fire_doy_to_unix_date_release|stem|fire_doy_to_unix_date_release|0|skipped
 remnants_release|stem|remnants_release|0|skipped
 burn_date_to_last_burned_date_release|stem|burn_date_to_last_burned_date_release|0|skipped
