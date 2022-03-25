@@ -22,5 +22,4 @@ template_release|stem|template_release|0|skipped
 fire_doy_to_unix_date_release|stem|fire_doy_to_unix_date_release|0|skipped
 remnants_release|stem|remnants_release|0|skipped
 burn_date_to_last_burned_date_release|stem|burn_date_to_last_burned_date_release|0|skipped
-remnant_distance_release|stem|remnant_distance_release|0|started
-remnant_distance_release|stem|remnant_distance_release|0|built
+remnant_distance_release|stem|remnant_distance_release|0|skipped
