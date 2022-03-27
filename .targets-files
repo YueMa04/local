@@ -32,6 +32,7 @@ _targets/objects/ndvi_dates_modis
 _targets/objects/ndvi_dates_modis_release
 _targets/objects/ndvi_modis
 _targets/objects/ndvi_modis_release
+_targets/objects/ndvi_relative_days_since_fire_release
 _targets/objects/precipitation_chelsa
 _targets/objects/precipitation_chelsa_release
 _targets/objects/projected_alos_release
@@ -98,4 +99,5 @@ data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_la
 data/raw_data/precipitation_chelsa/prec/prec_V1.2/clipped/CHELSA_prec_07_V1.2_land_clipped.tif
 data/temp/raw_data/fire_modis/log.csv
 data/temp/raw_data/kndvi_modis/log.csv
+data/temp/raw_data/ndvi_dates_modis/2021_12_19.tif
 data/temp/raw_data/ndvi_modis/log.csv
