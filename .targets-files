@@ -42,6 +42,7 @@ _targets/objects/projected_elevation_nasadem_release
 _targets/objects/projected_precipitation_chelsa_release
 _targets/objects/remnant_distance_release
 _targets/objects/remnants_release
+_targets/objects/soil_gcfr_release
 _targets/objects/template
 _targets/objects/template_release
 _targets/objects/vegmap
