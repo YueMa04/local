@@ -289,27 +289,42 @@ list(
                                    temp_directory = "data/temp/raw_data/climate_chelsa/",
                                    template_release = template_release,
                                    ... = climate_chelsa_release)
-    )
+    ),
+
+  tar_target(
+    projected_clouds_wilson_release,
+    process_release_clouds_wilson(input_tag = "raw_static",
+                                  output_tag = "processed_static",
+                                  temp_directory = "data/temp/raw_data/clouds_wilson/",
+                                  template_release = template_release,
+                                  sleep_time = 180,
+                                  ... = clouds_wilson_release)
+  )
+# ,
+#
+#   tar_target(
+#     projected_elevation_nasadem_release,
+#     process_release_elevation_nasadem(input_tag = "raw_static",
+#                                       output_tag = "processed_static",
+#                                       temp_directory = "data/temp/raw_data/elevation_nasadem/",
+#                                       template_release = template_release,
+#                                       ... = elevation_nasadem_release)
+#   )
 #,
+#
+#   tar_target(
+#     projected_landcover_za_release,
+#     process_release_landcover_za(input_tag = "raw_static",
+#                                  output_tag = "processed_static",
+#                                  temp_directory = "data/temp/raw_data/landcover_za/",
+#                                  template_release,
+#                                  sleep_time = 30,
+#                                  ... = landcover_za_release)
+#   )
+#   ,
 
 
-#
-#
-#   tar_target(
-#     projected_clouds_wilson,
-#     process_clouds_wilson(template = template, ... = clouds_wilson)
-#   ),
-#
-#   tar_target(
-#     projected_elevation_nasadem,
-#     process_elevation_nasadem(template = template, ... = elevation_nasadem)
-#   ),
-#
-#   tar_target(
-#     projected_landcover_za,
-#     process_landcover_za(template = template, ... = landcover_za)
-#   ),
-#
+
 #   tar_target(
 #     projected_precipitation_chelsa,
 #     process_precipitation_chelsa(template = template, ... = precipitaton_chelsa)
@@ -520,4 +535,21 @@ list(
 #     projected_climate_chelsa,
 #     process_climate_chelsa(template = template, ... = climate_chelsa)
 #   ),
+#
+#
+#   tar_target(
+#     projected_clouds_wilson,
+#     process_clouds_wilson(template = template, ... = clouds_wilson)
+#   ),
+#
+#   tar_target(
+#     projected_elevation_nasadem,
+#     process_elevation_nasadem(template = template, ... = elevation_nasadem)
+#   ),
+#
+#   tar_target(
+#     projected_landcover_za,
+#     process_landcover_za(template = template, ... = landcover_za)
+#   ),
+#
 
