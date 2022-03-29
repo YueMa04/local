@@ -5,8 +5,7 @@ vegmap_shp|stem|vegmap_shp|0|skipped
 vegmap|stem|vegmap|0|skipped
 domain|stem|domain|0|skipped
 elevation_nasadem_release|stem|elevation_nasadem_release|0|skipped
-landcover_za_release|stem|landcover_za_release|0|started
-landcover_za_release|stem|landcover_za_release|0|built
+landcover_za_release|stem|landcover_za_release|0|skipped
 alos_release|stem|alos_release|0|skipped
 clouds_wilson_release|stem|clouds_wilson_release|0|skipped
 climate_chelsa_release|stem|climate_chelsa_release|0|skipped
@@ -26,8 +25,7 @@ projected_elevation_nasadem_release|stem|projected_elevation_nasadem_release|0|s
 projected_alos_release|stem|projected_alos_release|0|skipped
 projected_clouds_wilson_release|stem|projected_clouds_wilson_release|0|skipped
 projected_climate_chelsa_release|stem|projected_climate_chelsa_release|0|skipped
-projected_landcover_za_release|stem|projected_landcover_za_release|0|started
-projected_landcover_za_release|stem|projected_landcover_za_release|0|built
+projected_landcover_za_release|stem|projected_landcover_za_release|0|skipped
 remnants_release|stem|remnants_release|0|skipped
 projected_precipitation_chelsa_release|stem|projected_precipitation_chelsa_release|0|skipped
 projected_soil_gcfr_release|stem|projected_soil_gcfr_release|0|skipped

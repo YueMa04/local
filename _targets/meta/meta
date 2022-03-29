@@ -29,7 +29,7 @@ process_alos|function|7b1bfa8c52e60923||||||||||||||
 get_alos_data|function|966b9846462e15d5||||||||||||||
 get_release_ndvi_modis|function|f4c7b583a27dda32||||||||||||||
 spatial_outputs|function|4c1a11d0b9579d31||||||||||||||
-.Random.seed|object|e9ae4c95f34e7176||||||||||||||
+.Random.seed|object|8b762658d392c5ab||||||||||||||
 update_git|function|f837db84a6c90d8a||||||||||||||
 process_fire_doy_to_unix_date|function|e77dfb3cf7eaf9c1||||||||||||||
 domain_rasterize|function|44797f03c1431513||||||||||||||
@@ -90,36 +90,36 @@ process_release_burn_date_to_last_burned_date|function|a152d5dd873e0635|||||||||
 domain_distance_release|function|668c24a97b9514aa||||||||||||||
 process_release_elevation_nasadem|function|4fd1008e561bed2d||||||||||||||
 process_release_clouds_wilson|function|bd58b82004bd9748||||||||||||||
-remnants_shp|stem|9dc0c644eedf6430|81ff8511059852c0|ef46db3751d8e999|1961884837|data/manual_download/RLE_2021_Remnants/RLE_Terr_2021_June2021_Remnants_ddw.shp|t19079.9011845552s|9fd0b3ef5a76431f|726393404|file|vector|||0||
-country|stem|e1ba870f74ff51d0|b6a9176b6c51da0c|171fc11275169737|-396713552||t19079.9057212338s|762b0ff687cec244|3225950|rds|vector|||6.462||
-vegmap_shp|stem|d3744d69c8da6bb2|193e3e8d55a8bbd4|ef46db3751d8e999|-232248272|data/manual_download/VEGMAP2018_AEA_16082019Final/NVM2018_AEA_V22_7_16082019_final.shp|t19079.9012340939s|9cc1ad1c26fc3f86|493121012|file|vector|||0.624||
-vegmap|stem|b502445ec7320d62|1811b4a0f90e1688|26cd61d94db2b5bd|602754364||t19079.9057236413s|d2ddbb368a516aaa|79094695|rds|vector|||67.879||
-domain|stem|655dea841d382d95|7a783623d7c8b012|01cb9c65e1d6a6a5|640757417||t19079.905721419s|c233e5bdd1ddd8a9|2171832|rds|vector|||102.995||
-elevation_nasadem_release|stem|2ba2286ddb57a2d6|3546dce05656b154|3481a8bbba9e40bd|-1527521665||t19079.9057214653s|a1c456b03adbfbf8|44|rds|vector|||3236.295||
-landcover_za_release|stem|2ba2286ddb57a2d6|d54c8f03b2b8ce1c|92e64574321c28bf|-1641120390||t19079.9246469885s|a1c456b03adbfbf8|44|rds|vector|||1594.712||
-alos_release|stem|e56f0587b62919c0|aad210ab8d359cec|0ffaabf1ef2ab1e8|-2136423916||t19079.9057210949s|b2c2d69496a0fbf4|63|rds|vector|||2142.124||
-clouds_wilson_release|stem|2ba2286ddb57a2d6|57b37486fbbaf92d|b796ab0d562ab61c|1181943714||t19079.9057210949s|a1c456b03adbfbf8|44|rds|vector|||513.641||
-climate_chelsa_release|stem|e56f0587b62919c0|d1803c4bd07550ab|af699abeaa5de692|1831999452||t19079.9057210949s|b2c2d69496a0fbf4|63|rds|vector|||4844.608||
-soil_gcfr_release|stem|2ba2286ddb57a2d6|a97cb1a9899f7b90|7bf9f0ef872f732b|-1868305559||t19079.9057215116s|a1c456b03adbfbf8|44|rds|vector|||39.809||
-precipitation_chelsa_release|stem|2ba2286ddb57a2d6|d1963c6b7fea3eed|b4be05eaee15cf07|-1107610768||t19079.9057215116s|a1c456b03adbfbf8|44|rds|vector|||42.218||
-ndvi_dates_modis_release|stem|2ba2286ddb57a2d6|a414b7127b65d59c|1d44c2773f11d482|-1234202563||t19079.9057214653s|a1c456b03adbfbf8|44|rds|vector|||397.622||
-ndvi_modis_release|stem|2ba2286ddb57a2d6|6f5cd51a0f243ad4|50a8430dedbbf34e|-198522288||t19079.9057214653s|a1c456b03adbfbf8|44|rds|vector|||305.139||
-kndvi_modis_release|stem|2ba2286ddb57a2d6|12caf32411e63342|8c7bb29fbb8f2d38|910579697||t19079.9057214653s|a1c456b03adbfbf8|44|rds|vector|||297.498||
-fire_modis_release|stem|2ba2286ddb57a2d6|acd2e48f3e0e8c4d|93865665a001b372|645962977||t19079.9057214653s|a1c456b03adbfbf8|44|rds|vector|||421.142||
-correct_ndvi_dates_release_proj|stem|2ba2286ddb57a2d6|a2e71986a8e7e3fa|0393128fde73fe04|1329904064||t19079.9057211412s|a1c456b03adbfbf8|44|rds|vector|||10.849||
-correct_ndvi_release_proj|stem|2ba2286ddb57a2d6|0bf1f784d58f59d6|021bb5f707934102|1686957245||t19079.9057211412s|a1c456b03adbfbf8|44|rds|vector|||10.628||
-correct_kndvi_release_proj|stem|2ba2286ddb57a2d6|21415925e8fd2d6c|4fd9ddbf596772ff|1051420198||t19079.9057210949s|a1c456b03adbfbf8|44|rds|vector|||10.271||
-correct_fire_release_proj|stem|2ba2286ddb57a2d6|8e75b49ccd6745f9|64844d727124f093|-6577821||t19079.9057210949s|a1c456b03adbfbf8|44|rds|vector|||9.767||
-template_release|stem|18f9a84e16d19627|ffcc52a34a63eaec|ad4d3f245418e889|-1533274814||t19079.9057215116s|af2f698bb96276c8|148|rds|vector|||29.161||
-fire_doy_to_unix_date_release|stem|2ba2286ddb57a2d6|8eae6088905b9182|0638c385ed3fc9d8|-1558882100||t19079.9057214653s|a1c456b03adbfbf8|44|rds|vector|||78.976||
-projected_elevation_nasadem_release|stem|2ba2286ddb57a2d6|fe6f799b6d478ec7|458ba6f8e190d39f|-1436816140||t19079.9057215116s|a1c456b03adbfbf8|44|rds|vector|||202.639|extension .tif is unknown. Using default format.|
-projected_alos_release|stem|2ba2286ddb57a2d6|a047d3357a4beb81|3af7cbeb1d0b2afb|-801124617||t19079.9057215116s|a1c456b03adbfbf8|44|rds|vector|||150.914|extension .tif is unknown. Using default format.|
-projected_clouds_wilson_release|stem|2ba2286ddb57a2d6|f43c2c2eaa61993d|d8b8c1a1eb7c5087|1870130015||t19079.9057215116s|a1c456b03adbfbf8|44|rds|vector|||4458.525|extension .tif is unknown. Using default format.|
-projected_climate_chelsa_release|stem|2ba2286ddb57a2d6|4e83c87a0d903ddd|3819e80e41781cce|-1151313823||t19079.9057215116s|a1c456b03adbfbf8|44|rds|vector|||70.501||
-projected_landcover_za_release|stem|2ba2286ddb57a2d6|f546d4dd6187c880|4e6c354d9e55c342|-318456684||t19079.9282739774s|a1c456b03adbfbf8|44|rds|vector|||313.276|extension .tif is unknown. Using default format.|
-remnants_release|stem|db8da2b66e1d5fdc|36d02d0ed230935d|c43aaa087db8615c|-1953732240||t19079.9057215116s|dd5db50a8149e5ce|152|rds|vector|||188.784|readValues raster has no values|
-projected_precipitation_chelsa_release|stem|2ba2286ddb57a2d6|05ec4d61713470d6|c67765e4371908b1|1449876186||t19079.9057215116s|a1c456b03adbfbf8|44|rds|vector|||148.186|extension .tif is unknown. Using default format.|
-projected_soil_gcfr_release|stem|2ba2286ddb57a2d6|043e17286f988cef|49d4386ac65033e1|1872584939||t19079.9057215116s|a1c456b03adbfbf8|44|rds|vector|||452.834||
-burn_date_to_last_burned_date_release|stem|2ba2286ddb57a2d6|5b21c92edd7e4030|2ad2fade811227c1|1403928928||t19079.9057210949s|a1c456b03adbfbf8|44|rds|vector|||175.871||
-remnant_distance_release|stem|07c862e82cff2b8a|f99a0dfdedb1973d|3997ad62c08aaab9|-1072118242||t19079.9057215116s|c303d0aa7a9c897f|156|rds|vector|||23.196||
-ndvi_relative_days_since_fire_release|stem|2ba2286ddb57a2d6|d487559382f535eb|169a7948f45c38cc|-359890910||t19079.9057214653s|a1c456b03adbfbf8|44|rds|vector|||352.741||
+remnants_shp|stem|9dc0c644eedf6430|81ff8511059852c0|ef46db3751d8e999|1961884837|data/manual_download/RLE_2021_Remnants/RLE_Terr_2021_June2021_Remnants_ddw.shp|t19080.0110639036s|9fd0b3ef5a76431f|726393404|file|vector|||0||
+country|stem|e1ba870f74ff51d0|b6a9176b6c51da0c|171fc11275169737|-396713552||t19080.0148203036s|762b0ff687cec244|3225950|rds|vector|||6.462||
+vegmap_shp|stem|d3744d69c8da6bb2|193e3e8d55a8bbd4|ef46db3751d8e999|-232248272|data/manual_download/VEGMAP2018_AEA_16082019Final/NVM2018_AEA_V22_7_16082019_final.shp|t19080.0111142279s|9cc1ad1c26fc3f86|493121012|file|vector|||0.624||
+vegmap|stem|b502445ec7320d62|1811b4a0f90e1688|26cd61d94db2b5bd|602754364||t19080.0148222017s|d2ddbb368a516aaa|79094695|rds|vector|||67.879||
+domain|stem|655dea841d382d95|7a783623d7c8b012|01cb9c65e1d6a6a5|640757417||t19080.0148203499s|c233e5bdd1ddd8a9|2171832|rds|vector|||102.995||
+elevation_nasadem_release|stem|2ba2286ddb57a2d6|3546dce05656b154|3481a8bbba9e40bd|-1527521665||t19080.0148203499s|a1c456b03adbfbf8|44|rds|vector|||3236.295||
+landcover_za_release|stem|2ba2286ddb57a2d6|d54c8f03b2b8ce1c|92e64574321c28bf|-1641120390||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||1594.712||
+alos_release|stem|e56f0587b62919c0|aad210ab8d359cec|0ffaabf1ef2ab1e8|-2136423916||t19080.014820211s|b2c2d69496a0fbf4|63|rds|vector|||2142.124||
+clouds_wilson_release|stem|2ba2286ddb57a2d6|57b37486fbbaf92d|b796ab0d562ab61c|1181943714||t19080.014820211s|a1c456b03adbfbf8|44|rds|vector|||513.641||
+climate_chelsa_release|stem|e56f0587b62919c0|d1803c4bd07550ab|af699abeaa5de692|1831999452||t19080.014820211s|b2c2d69496a0fbf4|63|rds|vector|||4844.608||
+soil_gcfr_release|stem|2ba2286ddb57a2d6|a97cb1a9899f7b90|7bf9f0ef872f732b|-1868305559||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||39.809||
+precipitation_chelsa_release|stem|2ba2286ddb57a2d6|d1963c6b7fea3eed|b4be05eaee15cf07|-1107610768||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||42.218||
+ndvi_dates_modis_release|stem|2ba2286ddb57a2d6|a414b7127b65d59c|1d44c2773f11d482|-1234202563||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||397.622||
+ndvi_modis_release|stem|2ba2286ddb57a2d6|6f5cd51a0f243ad4|50a8430dedbbf34e|-198522288||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||305.139||
+kndvi_modis_release|stem|2ba2286ddb57a2d6|12caf32411e63342|8c7bb29fbb8f2d38|910579697||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||297.498||
+fire_modis_release|stem|2ba2286ddb57a2d6|acd2e48f3e0e8c4d|93865665a001b372|645962977||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||421.142||
+correct_ndvi_dates_release_proj|stem|2ba2286ddb57a2d6|a2e71986a8e7e3fa|0393128fde73fe04|1329904064||t19080.014820211s|a1c456b03adbfbf8|44|rds|vector|||10.849||
+correct_ndvi_release_proj|stem|2ba2286ddb57a2d6|0bf1f784d58f59d6|021bb5f707934102|1686957245||t19080.014820211s|a1c456b03adbfbf8|44|rds|vector|||10.628||
+correct_kndvi_release_proj|stem|2ba2286ddb57a2d6|21415925e8fd2d6c|4fd9ddbf596772ff|1051420198||t19080.014820211s|a1c456b03adbfbf8|44|rds|vector|||10.271||
+correct_fire_release_proj|stem|2ba2286ddb57a2d6|8e75b49ccd6745f9|64844d727124f093|-6577821||t19080.014820211s|a1c456b03adbfbf8|44|rds|vector|||9.767||
+template_release|stem|18f9a84e16d19627|ffcc52a34a63eaec|ad4d3f245418e889|-1533274814||t19080.0148204425s|af2f698bb96276c8|148|rds|vector|||29.161||
+fire_doy_to_unix_date_release|stem|2ba2286ddb57a2d6|8eae6088905b9182|0638c385ed3fc9d8|-1558882100||t19080.0148203499s|a1c456b03adbfbf8|44|rds|vector|||78.976||
+projected_elevation_nasadem_release|stem|2ba2286ddb57a2d6|fe6f799b6d478ec7|458ba6f8e190d39f|-1436816140||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||202.639|extension .tif is unknown. Using default format.|
+projected_alos_release|stem|2ba2286ddb57a2d6|a047d3357a4beb81|3af7cbeb1d0b2afb|-801124617||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||150.914|extension .tif is unknown. Using default format.|
+projected_clouds_wilson_release|stem|2ba2286ddb57a2d6|f43c2c2eaa61993d|d8b8c1a1eb7c5087|1870130015||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||4458.525|extension .tif is unknown. Using default format.|
+projected_climate_chelsa_release|stem|2ba2286ddb57a2d6|4e83c87a0d903ddd|3819e80e41781cce|-1151313823||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||70.501||
+projected_landcover_za_release|stem|2ba2286ddb57a2d6|f546d4dd6187c880|4e6c354d9e55c342|-318456684||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||313.276|extension .tif is unknown. Using default format.|
+remnants_release|stem|db8da2b66e1d5fdc|36d02d0ed230935d|c43aaa087db8615c|-1953732240||t19080.0148203962s|dd5db50a8149e5ce|152|rds|vector|||188.784|readValues raster has no values|
+projected_precipitation_chelsa_release|stem|2ba2286ddb57a2d6|05ec4d61713470d6|c67765e4371908b1|1449876186||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||148.186|extension .tif is unknown. Using default format.|
+projected_soil_gcfr_release|stem|2ba2286ddb57a2d6|043e17286f988cef|49d4386ac65033e1|1872584939||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||452.834||
+burn_date_to_last_burned_date_release|stem|2ba2286ddb57a2d6|5b21c92edd7e4030|2ad2fade811227c1|1403928928||t19080.014820211s|a1c456b03adbfbf8|44|rds|vector|||175.871||
+remnant_distance_release|stem|07c862e82cff2b8a|f99a0dfdedb1973d|3997ad62c08aaab9|-1072118242||t19080.0148203962s|c303d0aa7a9c897f|156|rds|vector|||23.196||
+ndvi_relative_days_since_fire_release|stem|2ba2286ddb57a2d6|d487559382f535eb|169a7948f45c38cc|-359890910||t19080.0148203962s|a1c456b03adbfbf8|44|rds|vector|||352.741||
